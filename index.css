@@ -67,7 +67,7 @@ img:hover {
 	justify-content: center;
 }
 
-.scrolldown {
+.scrolling {
 	position: absolute;
 	bottom: 20px;
 	width: 40px;
@@ -76,7 +76,7 @@ img:hover {
 	transform: translateY(-80px) translateX(-50%) rotate(45deg);
 }
 
-.scrolldown span {
+.scrolling span {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -89,17 +89,17 @@ img:hover {
 	opacity: 0;
 }
 
-.scrolldown span:nth-child(1){
+.scrolling span:nth-child(1){
 	transform: translate(-15px,-15px);
 	animation-delay: -0.4s;
 }
 
-.scrolldown span:nth-child(2){
+.scrolling span:nth-child(2){
 	transform: translate(0,0);
 	animation-delay: -0.2s;
 }
 
-.scrolldown span:nth-child(3){
+.scrolling span:nth-child(3){
 	transform: translate(15px,15px);
 	animation-delay: 0s;
 }
