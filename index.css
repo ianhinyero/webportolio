@@ -1,0 +1,207 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+
+/*FONT FAMILY*/
+/*font-family: 'Montserrat', sans-serif;*/
+/*font-family: 'Quicksand', sans-serif;*/
+
+body {
+	font-family: 'Quicksand', sans-serif;
+}
+
+nav {
+	font-family: 'Montserrat', sans-serif;
+	background: rgba(0, 0, 0, 0.8) ;
+}
+
+img {
+  opacity: 0.5;
+
+}
+
+img:hover {
+  opacity: 1;
+}
+
+/*ABOUT ME SECTION*/
+.introduction-container {
+	max-width: 100%;
+	min-height: 100vh;
+	background-color: #161616;
+	color: lightgray;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+
+#developer {
+	font-style: italic;
+}
+
+.introduction-container h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+}
+
+.introduction-container h2 {
+	font-size: 20px;
+}
+
+.aboutme-container {
+	max-width: 100%;
+	min-height: 50vh;
+	background-color: ghostwhite;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.scrolldown {
+	position: absolute;
+	bottom: 20px;
+	width: 40px;
+	height: 40px;
+	left: 50%;
+	transform: translateY(-80px) translateX(-50%) rotate(45deg);
+}
+
+.scrolldown span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-bottom: 2px solid #fff;
+	border-right: 2px solid #fff;
+	animation: animate 1.5s linear infinite;
+	opacity: 0;
+}
+
+.scrolldown span:nth-child(1){
+	transform: translate(-15px,-15px);
+	animation-delay: -0.4s;
+}
+
+.scrolldown span:nth-child(2){
+	transform: translate(0,0);
+	animation-delay: -0.2s;
+}
+
+.scrolldown span:nth-child(3){
+	transform: translate(15px,15px);
+	animation-delay: 0s;
+}
+
+@keyframes animate{
+	0%
+	{
+		top: -5px;
+		left: -5px;
+		opacity: 0;
+	}
+	25%
+	{
+		top: 0px;
+		left: 0px;
+		opacity: 1;
+	}
+	100%
+	{
+		top: 5px;
+		left: 5px;
+		opacity: 0;
+	}
+}
+
+.aboutme-container h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	color: black;
+}
+
+.aboutme-container h2 {
+	font-size: 20px;
+	color: #848484;
+}
+
+.aboutme-container p {
+	font-size: 20px;
+	color: #848484;
+}
+
+/*ABOUT ME SECTION END*/
+
+/*TOOLS SECTION*/
+
+.tools-container {
+	max-width: 100%;
+	min-height: 70vh;
+	background-color: #161616;
+	font-family: 'Montserrat', sans-serif;
+	color: lightgray;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+/*TOOLS SECTION END*/
+
+/*WORK EXPERIENCE*/
+
+.workexp-container {
+	max-width: 100%;
+	min-height: 100vh;
+	background-color: whitesmoke;
+	color: #161616;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+/*WORK EXPERIENCE END*/
+
+/*Contact*/
+
+.contact-container {
+	max-width: 100%;
+	min-height: 100vh;
+	padding: 20px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	display: flex;
+	color: whitesmoke;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	background: url(images/work/contactbg.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.form-container {
+	background-color: rgba(0, 0, 0, .5);
+	border-radius: 50px
+}
+
+button {
+	color: black;
+	font-weight: bold;
+	background-color: whitesmoke;
+	border-radius: 30px;
+	font-size: 1rem;
+	padding: 1em;
+}
+
+/*contact*/
